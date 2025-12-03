@@ -24,8 +24,6 @@
   },
   "homepage": "https://github.com/BaseMax/SoapAsanakSMSJS#readme",
   "dependencies": {
-    "axios": "^1.13.2",
-    "dotenv": "^17.2.3",
-    "soap-asanak-sms": "^1.0.0"
+    "dotenv": "^17.2.3"
   }
 }
