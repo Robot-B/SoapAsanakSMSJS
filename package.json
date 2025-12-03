@@ -1,6 +1,6 @@
 {
   "name": "soap-asanak-sms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js library to send SMS via Asanak SOAP API",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/BaseMax/SoapAsanakSMSJS.git"
   },
-  "keywords": ["SMS", "Asanak", "SOAP", "NodeJS"],
+  "keywords": [
+    "SMS",
+    "Asanak",
+    "SOAP",
+    "NodeJS"
+  ],
   "author": "Seyyed Ali Mohammadiyeh (Max Base)",
   "license": "MIT",
   "type": "commonjs",
@@ -20,6 +25,7 @@
   "homepage": "https://github.com/BaseMax/SoapAsanakSMSJS#readme",
   "dependencies": {
     "axios": "^1.13.2",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "soap-asanak-sms": "^1.0.0"
   }
 }
