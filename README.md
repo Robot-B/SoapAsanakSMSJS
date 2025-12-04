@@ -50,7 +50,7 @@ Create a `.env` file in your project root:
 ASANAK_USERNAME=your_username
 ASANAK_PASSWORD=your_password
 ASANAK_SOURCE_NUMBER=982175181
-ASANAK_WEBSERVICE=https://smsapi.asanak.ir/services/CompositeSmsGateway
+ASANAK_WEBSERVICE=https://smsapi.asanak.ir/services/CompositeSmsGateway?wsdl
 ```
 
 The library will automatically load `.env` from the current folder or parent directory.

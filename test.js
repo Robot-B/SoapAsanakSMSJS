@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 async function sendSms() {
-  const url = "https://smsapi.asanak.ir/services/CompositeSmsGateway";
+  const url = "https://smsapi.asanak.ir/services/CompositeSmsGateway?wsdl";
   
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
